@@ -1,7 +1,7 @@
 ## Martins Locações
 
 **Martins Locações** é uma espécie de *mostruário interativo* de veículos.  
-Criado para apresentar de forma moderna e dinâmica uma locadora fictícia, o projeto combina design simples, interatividade e performance.
+Criado para apresentar de forma moderna e dinâmica uma locadora de carros, o projeto combina design simples, interatividade e performance.
 
 ---
 
