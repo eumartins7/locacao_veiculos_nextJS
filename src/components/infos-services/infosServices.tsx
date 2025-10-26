@@ -6,7 +6,7 @@ export function WhyService() {
         <section id="sobre" className="bg-gray-200 w-full mt-10 pt-20 pb-20">
             <div className="flex justify-between items-center ml-20 mr-20">
                 <div className="font-service text-6xl">
-                    <h1>Por que escoher <br /> nossos serviços?
+                    <h1>Por que escolher <br /> nossos serviços?
                     </h1>
                 </div>
 
@@ -19,7 +19,7 @@ export function WhyService() {
 
                         <CardAbout 
                             title="Para Quem Precisa de Mobilidade"
-                            description="Atendemos motoristas particulares, profissionais autônomos, turistas e qualquer pessoa que precise de um carro por um ou mais dias."
+                            description="Atendemos motoristas particulares, profissionais autônomos, e qualquer pessoa que precise de um carro por um mês ou mais."
                         />
 
                         <CardAbout 
