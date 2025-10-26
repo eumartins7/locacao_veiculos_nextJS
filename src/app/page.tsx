@@ -3,6 +3,8 @@ import { Carousel } from "@/components/section-carousel/sectionCarousel";
 import { WhyService } from "@/components/infos-services/infosServices";
 import { CarsSection } from "@/components/section-cars/sectionCars";
 import { SectionContact } from "@/components/section-contact/sectionContact";
+import { Footer } from "@/components/footer/footer";
+import { ChatWidget } from "@/components/chat-widget/chatWidget";
 
 
 export default function Home() {
@@ -10,9 +12,11 @@ export default function Home() {
    <>
       <Header />
       <Carousel />
+      <ChatWidget />
       <WhyService  />
       <CarsSection />
       <SectionContact />
+      <Footer />
    </>
   );
 }
