@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Oswald:wght@500&family=Prompt:wght@600&family=Rubik&family=Special+Gothic+Expanded+One&family=Zalando+Sans+SemiExpanded:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@600&family=Patua+One&family=Prompt:wght@600&family=Special+Gothic+Expanded+One&family=Zalando+Sans+SemiExpanded:wght@600&display=swap');
 
 
 @import "tailwindcss";
@@ -31,13 +31,14 @@ html {
   .font-contact {
     font-family: var(--font-family-contact);
   }
+
 }
 
 @layer base{
   :root {
-  --font-family-sans: "Mukta", sans-serif;
+  --font-family-sans: "Patua One", sans-serif;
   --font-family-service: "Special Gothic Expanded One", sans-serif;
-  --font-family-h1serv: "Oswald", sans-serif;
+  --font-family-h1serv: "Noto Sans SC", sans-serif;
   --font-family-pserv: "Rubik", sans-serif;
   --font-family-vehicle: "Zalando Sans SemiExpanded", sans-serif;
   --font-family-contact: "Prompt", sans-serif;
