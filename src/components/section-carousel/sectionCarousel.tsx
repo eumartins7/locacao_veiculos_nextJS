@@ -1,6 +1,6 @@
 'use client'
 import { useState } from "react"
-import { BotaoCarousel } from "@/components/button-carousel/buttonCarousel"
+import { BotaoCarousel } from "@/components/section-carousel/button-carousel/buttonCarousel"
 import Image from "next/image"
 
 export function Carousel() {
@@ -24,9 +24,11 @@ export function Carousel() {
             src={slide}
             alt={`Slide ${index + 1}`}
             fill
-            className={`object-cover ${
+            className={`object-cover  ${
               index === indexAtual ? "opacity-100 z-10" : "opacity-0 z-0"
             }`}
+            sizes="100vw"
+            priority={index === 0} // Apenas o primeiro slide recebe prioridade
           />
         ))}
 
