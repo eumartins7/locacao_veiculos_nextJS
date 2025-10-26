@@ -1,9 +1,9 @@
-import { CardAbout } from "../card-services/cardServices";
+import { CardAbout } from "./card-services/cardServices";
 
 
 export function WhyService() {
     return (
-        <section className="bg-gray-200 w-full pt-10 pb-10">
+        <section id="sobre" className="bg-gray-200 w-full mt-10 pt-20 pb-20">
             <div className="flex justify-between items-center ml-20 mr-20">
                 <div className="font-service text-6xl">
                     <h1>Por que escoher <br /> nossos serviços?
@@ -11,7 +11,7 @@ export function WhyService() {
                 </div>
 
                 <div>
-                    <div className="flex flex-col gap-8">
+                    <div className="flex flex-col gap-8 flex-1 max-w-lg">
                         <CardAbout 
                             title="Facilidade em Contratar"
                             description="Alugue seu carro sem burocracia, com atendimento rápido e direto."
