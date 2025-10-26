@@ -16,14 +16,13 @@ export function Header() {
                     />  
                 </div>
 
-                <div>
+                <nav>
                     <ul className="flex gap-3">
-                        <li>Início</li>
-                        <li>Sobre Nós</li>
-                        <li>Veículos</li>
-                        <li>Contato</li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#veiculos">Veículos</a></li>
+                        <li><a href="#contato">Contato</a></li>
                     </ul>
-                </div>
+                </nav>
             </div>
         </header>
     )
