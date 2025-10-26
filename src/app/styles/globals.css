@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Oswald:wght@500&family=Prompt:wght@600&family=Rubik&family=Special+Gothic+Expanded+One&family=Zalando+Sans+SemiExpanded:wght@600&display=swap');
+
+
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+@layer utilities {
+  .font-sans {
+    font-family: var(--font-family-sans);
+  }
+
+  .font-service {
+    font-family: var(--font-family-service);
+  }
+
+  .font-h1serv {
+    font-family: var(--font-family-h1serv);
+  }
+  
+  .font-pserv {
+    font-family: var(--font-family-pserv);
+  }
+
+  .font-vehicle {
+    font-family: var(--font-family-vehicle)
+  }
+
+  .font-contact {
+    font-family: var(--font-family-contact);
+  }
+}
+
+@layer base{
+  :root {
+  --font-family-sans: "Mukta", sans-serif;
+  --font-family-service: "Special Gothic Expanded One", sans-serif;
+  --font-family-h1serv: "Oswald", sans-serif;
+  --font-family-pserv: "Rubik", sans-serif;
+  --font-family-vehicle: "Zalando Sans SemiExpanded", sans-serif;
+  --font-family-contact: "Prompt", sans-serif;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
