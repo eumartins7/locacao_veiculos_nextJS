@@ -32,17 +32,6 @@ O projeto é uma evolução direta de uma versão anterior feita com HTML, CSS e
 
 ---
 
-## Estrutura Básica
-
-/app
-├── components/ # Componentes reutilizáveis
-├── styles/ # Estilos e temas
-├── page.tsx # Página principal
-├── layout.tsx # Layout global
-└── public/ # Imagens e ícones
-
----
-
 ## 📜 Licença
 
 Este projeto é de propriedade exclusiva de **Gabriel Martins**.  
