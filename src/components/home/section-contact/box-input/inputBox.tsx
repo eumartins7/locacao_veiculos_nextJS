@@ -31,7 +31,7 @@ export function InputBox() {
                 <div>
                     <button 
                     type="submit"
-                    className="bg-black text-white text-lg rounded-lg cursor-pointer p-4 w-full">
+                    className="bg-black hover:bg-stone-900 text-white text-lg rounded-lg cursor-pointer p-4 w-full">
                         Enviar
                 </button>
             </div>  
