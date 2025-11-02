@@ -1,32 +1,23 @@
 import { CarButton } from "../button-card/buttonCars"
 
 
+
 type InfosCarProps = {
-    brand: string
-    model: string
-    description: string
-    description2: string
-    price: string
-    plan: string
+    brand: string,
+    model: string,
+    description: string,
+    description2: string,
+    price: string,
+    plan: string,
 }
 
-export function CarsCard({brand, model, description, description2, price, plan}: InfosCarProps) {
+export function CarsCard({brand, model, price, plan}: InfosCarProps) {
     return (
         <div className="bg-white rounded-2xl">
             <div className="p-5 pt-10 text-2xl">
                 <h1>
                     {brand} <strong>{model}</strong>
                 </h1>
-            </div>
-            
-            <div className=" bg-gray-200 rounded-2xl m-3 p-4">
-                 <p>
-                    {description}
-                    
-                </p>
-                <p>
-                    {description2}
-                </p>
             </div>
 
             <div className="p-5">
@@ -42,7 +33,9 @@ export function CarsCard({brand, model, description, description2, price, plan}:
             </div>
 
             <div>
-                <CarButton />
+                <div className="p-2">
+                        <CarButton />
+                </div>
             </div>
             
         </div>
