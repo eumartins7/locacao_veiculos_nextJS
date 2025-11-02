@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
 import { carDetails } from "../carDetail";
-import Image from "next/image";
-import { BotaoVendedor } from "@/components/layout/botao-vendedor/button";
+import { BoxLeft } from "../container/left/boxLeft";
+import { BoxRight } from "../container/right/boxRight";
 
-type CarPageProps = {
+export type CarPageProps = {
   params: { id: string };
 };
 
@@ -15,51 +15,20 @@ export function CarPage({ params }: CarPageProps) {
   }
 
   return (
-    <main className="">
-      <section className="bg-gray-200 mt-10 pl-20">
-        <div className="flex">
-          <div className="bg-white rounded-2xl mt-10 mb-10 mr-10">
-            <Image 
-              src={carro.image}
-              alt={`${carro.marca} ${carro.modelo}`}
-              width={1000}
-              height={800}
-            />
+    <main className="bg-gray-200 mt-10 pl-20">
+      <div className="flex justify-center">
+        <section className="w-[70%] ">
+          <div>
+            <BoxLeft params={{ id: params.id }} />
           </div>
+        </section>
 
-          <div 
-            className=" bg-white rounded-lg mt-10 mb-10 mr-10 pl-5 flex-1"
-          >
-            <div className="flex flex-col justify-center text-center text-3xl">
-              <h1>
-                {carro.marca} <b>{carro.modelo}</b>
-              </h1>
-              <div>
-                <p>carro bom</p>
-              </div>
-            </div>
-
-            <div className="w-[50%]">
-              <hr className="text-gray-400"/>
-            </div>
-
-            <div>
-              <p>
-                A partir de: <br /> {carro.price}
-              </p>
-              <p>
-                no plano de 1 mês
-              </p>
-            </div>
-
-            <div className="w-[70%]">
-              <BotaoVendedor />
-            </div>
+        <section className="w-[30%]">
+          <div className="flex-1">
+            <BoxRight params={{ id: params.id }} />
           </div>
-        </div>
-        
-        
-      </section>
+        </section>
+      </div>
     </main>
   );
 }
