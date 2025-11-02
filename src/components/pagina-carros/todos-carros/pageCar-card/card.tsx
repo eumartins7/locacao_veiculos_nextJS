@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { CarButton } from "./button/buttonCard"
+import { CarButton } from "@/components/home/section-cars/button-card/buttonCars"
 import { CardIMG } from "./card/cardImgs"
 
 type CarProps = {
@@ -23,10 +23,13 @@ export function CardPageTwo({brand, model, price, plan, image, id}: CarProps) {
 
             <div className="bg-white rounded-2xl text-center">
   
-                <div className="p-5 pt-10 text-2xl">
+                <div className="flex gap-2 justify-center font-aboutCompany p-5 pt-10 text-2xl">
                     <h1>
-                    {brand} <strong>{model}</strong>
+                    {brand} 
                     </h1>
+                    <p className="font-bold text-stone-800">
+                        {model}
+                    </p>
                 </div>
 
                 <div className="p-5">
@@ -42,7 +45,6 @@ export function CardPageTwo({brand, model, price, plan, image, id}: CarProps) {
                     <Link href={`/cars/${id}`}>
                         <CarButton />
                     </Link>
-                    
                 </div>
             </div> 
         </div>
