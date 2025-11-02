@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@600&family=Patua+One&family=Prompt:wght@600&family=Special+Gothic+Expanded+One&family=Zalando+Sans+SemiExpanded:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@600&family=Patua+One&family=Prompt:wght@600&family=Roboto&family=Special+Gothic+Expanded+One&family=Zalando+Sans+SemiExpanded:wght@600&display=swap');
 
 @import "tailwindcss";
 
@@ -32,6 +31,10 @@ html {
     font-family: var(--font-family-contact);
   }
 
+  .font-aboutCompany {
+    font-family: var(--font-family-aboutCompany);
+  }
+
 }
 
 @layer base{
@@ -42,6 +45,7 @@ html {
   --font-family-pserv: "Rubik", sans-serif;
   --font-family-vehicle: "Zalando Sans SemiExpanded", sans-serif;
   --font-family-contact: "Prompt", sans-serif;
+  --font-family-aboutCompany: "Roboto", sans-serif;
   }
 }
 
