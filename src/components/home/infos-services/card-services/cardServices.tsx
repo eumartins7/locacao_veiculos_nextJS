@@ -7,11 +7,11 @@ type CardAboutProps = {
 
 export function CardAbout({title, description}: CardAboutProps){
     return (
-        <div className="bg-white text-center p-6 rounded-2xl">
-            <h1 className="font-h1serv text-3xl">
+        <div className=" bg-white text-center p-3 lg:p-6 rounded-2xl">
+            <h1 className="font-h1serv text-lg lg:text-3xl">
                 {title}
             </h1>
-            <p className="font-pserv p-5">
+            <p className="font-pserv text-sm p-2 lg:p-5">
                 {description}
             </p>
         </div>
