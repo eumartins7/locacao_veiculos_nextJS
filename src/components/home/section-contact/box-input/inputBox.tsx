@@ -2,7 +2,7 @@
 
 export function InputBox() {
     return (
-        <div>
+        <div className="flex justify-center">
             <form className="flex flex-col gap-4 mr-20">
                 <input 
                     type="text" 
@@ -17,7 +17,7 @@ export function InputBox() {
                     name="box-email" 
                     id="box-email" 
                     placeholder="Digite seu email"
-                    className="bg-white rounded-lg mr-20 p-2 w-full" 
+                    className="bg-white rounded-lg" 
                 />
 
                 <textarea 
@@ -30,15 +30,13 @@ export function InputBox() {
 
                 <div>
                     <button 
-                    type="submit"
-                    className="bg-black hover:bg-stone-900 text-white text-lg rounded-lg cursor-pointer p-4 w-full">
-                        Enviar
-                </button>
-            </div>  
+                        type="submit"
+                        className="bg-black hover:bg-stone-900 text-white text-lg rounded-lg cursor-pointer p-4 w-full"
+                    >
+                            Enviar
+                    </button>
+                </div>  
             </form>
-
-
-          
         </div>
 
     )
