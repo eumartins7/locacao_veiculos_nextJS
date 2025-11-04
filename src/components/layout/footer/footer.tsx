@@ -3,11 +3,11 @@ import Image from "next/image"
 
 export function Footer() {
     return (
-<footer className="bg-gradient-to-r from-amber-500 to-white mt-10">
-  <div className="flex justify-between p-5 px-20">
-    <h1 className="font-vehicle text-xs font-bold">© 2025 Martins Locações — Todos os direitos reservados</h1>
+<footer className="bg-gradient-to-r from-[#fc4a1a] to-[#f7b733] mt-10">
+  <div className="whitespace-nowrap md:flex md:justify-between pt-5 pb-5 pl-3 lg:px-20">
+    <h1 className="font-aboutCompany lg:font-vehicle text-xs font-bold md:p-3 ">© 2025 Martins Locações — Todos os direitos reservados</h1>
 
-    <nav>
+    <nav className="invisible md:visible md:flex md:pr-4">
       <ul className="flex gap-6 font-medium">
         <li><a href="#inicio" className="hover:underline">Início</a></li>
         <li><a href="#sobre" className="hover:underline">Sobre Nós</a></li>
@@ -28,7 +28,7 @@ export function Footer() {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer"
+        className="flex items-center gap-2 hover:opacity-80 transition-opacity cursor-pointer pb-5"
       >
         <Image src={src} alt={alt} width={50} height={50} />
         <span>{alt}</span>
