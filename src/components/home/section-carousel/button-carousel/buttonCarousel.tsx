@@ -12,16 +12,16 @@ export function BotaoCarousel({prev, next}: BotaoCarouselProps) {
                 <Image
                     src='/carousel/arrow_circle_left.svg'
                     alt="Voltar Slide"
-                    width={50}
-                    height={50}
+                    width={20}
+                    height={20}
                 />
             </div>
             <div onClick={next} className="cursor-pointer">
                 <Image
                     src='/carousel/arrow_circle_right.svg'
                     alt="Próximo Slide"
-                    width={50}
-                    height={50}
+                    width={20}
+                    height={20}
                 />
             </div>
         </div>
