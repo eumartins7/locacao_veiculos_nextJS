@@ -7,13 +7,14 @@ type CardsImgs = {
 
 export function CardIMG({image, detail}: CardsImgs) {
     return (
-        <div className="relative w-[300px] h-[200px]">
+        <div className="w-full flex justify-center">
             <Image 
-            src={image} 
-            alt={detail} 
-            fill
-            sizes="300px"
-            className="object-contain mx-auto translate-y-13"
+                src={image} 
+                alt={detail}
+                width={260}
+                height={160}
+                className="object-contain pointer-events-none select-none translate-y-13"
+                draggable={false}
             />
         </div>
     )
