@@ -12,9 +12,8 @@ export function BoxAboutCar({ params }: CarPageProps) {
 
   return (
         <div className="font-aboutCompany font-bold flex flex-col">
-            <div className="bg-white rounded-2xl">
-                <div 
-                    className=" mt-10 mb-10 mr-10 pl-5 ">
+            <div className="rounded-2xl">
+                <div className="flex flex-col mt-5 mb-5 pl-5">
                     <div>
                         <div className="font-normal text-3xl">
                             <h1>
@@ -28,7 +27,7 @@ export function BoxAboutCar({ params }: CarPageProps) {
                         </div>
                     </div>
                 
-                    <div className="w-[70%] mt-3 mb-3">
+                    <div className="w-[50%] md:w-[70%] mt-3 mb-3">
                         <hr className="text-gray-400"/>
                     </div>
                 
@@ -43,7 +42,7 @@ export function BoxAboutCar({ params }: CarPageProps) {
                             {carro.price}
                         </div>
 
-                        <div className="text-stone-600">
+                        <div className="text-stone-600 md:text-xl">
                             <p>
                                 no plano de 1 mês
                             </p>                    
@@ -51,7 +50,7 @@ export function BoxAboutCar({ params }: CarPageProps) {
 
                     </div>
                 
-                    <div className="flex flex-1 justify-center mt-5">
+                    <div className="flex flex-1 mt-5">
                         <BotaoVendedor modelo={params.id} marca={carro.marca} />
                     </div>
                 </div>

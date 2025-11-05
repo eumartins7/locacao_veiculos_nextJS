@@ -7,8 +7,8 @@ type BotaoCarouselProps = {
 
 export function BotaoCarousel({prev, next}: BotaoCarouselProps) {
     return (
-        <div className="absolute inset-0 flex items-center justify-between px-4 z-20">
-            <div onClick={prev} className="cursor-pointer">
+        <div className="hidden md:flex absolute inset-0 items-center justify-between px-4 z-20">
+            <div onClick={prev} className="hidden cursor-pointer">
                 <Image
                     src='/carousel/arrow_circle_left.svg'
                     alt="Voltar Slide"
@@ -16,12 +16,29 @@ export function BotaoCarousel({prev, next}: BotaoCarouselProps) {
                     height={20}
                 />
             </div>
-            <div onClick={next} className="cursor-pointer">
+            <div onClick={next} className="hidden cursor-pointer">
                 <Image
                     src='/carousel/arrow_circle_right.svg'
                     alt="Próximo Slide"
                     width={20}
                     height={20}
+                />
+            </div>
+                
+            <div onClick={next} className="md:flex">
+                <Image
+                    src='/carousel/arrow_circle_left.svg'
+                    alt="Próximo Slide"
+                    width={50}
+                    height={50}
+                />
+            </div>
+            <div onClick={prev} className="md:flex">
+                <Image
+                    src='/carousel/arrow_circle_right.svg'
+                    alt="Próximo Slide"
+                    width={50}
+                    height={50}
                 />
             </div>
         </div>

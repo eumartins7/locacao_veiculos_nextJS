@@ -9,13 +9,13 @@ export function BoxSpecs({ params }: CarPageProps) {
   
 
   return (
-    <div className=" font-aboutCompany mt-10 mb-10 mr-10 pl-5">
+    <div className=" md:font-aboutCompany md:mt-10 md:mb-10 md:mr-10 md:pl-5 md:pr-5 md:w-full">
       <div className="flex-1 bg-white rounded-xl p-6 shadow-md mt-6">
-        <div className=" font-bold text-xl mb-5">
+        <div className=" font-bold text-xl mb-5 md:text-3xl">
           <h1>Detalhes</h1>
         </div>
 
-        <div className="flex justify-around text-sm">
+        <div className="flex justify-around text-sm md:text-xl">
           <div className="flex gap-2">
             <Image 
               src="/infos-car/car-engine.svg"

@@ -15,19 +15,19 @@ export function CarPage({ params }: CarPageProps) {
   }
 
   return (
-    <main className="bg-gray-200 mt-10 pl-20">
-      <div className="flex justify-center">
-        <section className="w-[70%] ">
-          <div>
-            <BoxLeft params={{ id: params.id }} />
-          </div>
+    <main className="bg-gray-200 pl-5 pr-5">
+      <div className="flex flex-col pt-5 md:flex-row md:justify-center gap-5 md:pt-10 md:pb-10">
+
+        {/* ESQUERDA */}
+        <section className="md:w-[70%]">
+          <BoxLeft params={{ id: params.id }} />
         </section>
 
-        <section className="w-[30%]">
-          <div className="flex-1">
-            <BoxRight params={{ id: params.id }} />
-          </div>
+        {/* DIREITA */}
+        <section className="md:w-[30%] hidden md:block">
+          <BoxRight params={{ id: params.id }} />
         </section>
+
       </div>
     </main>
   );

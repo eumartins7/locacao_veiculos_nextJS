@@ -11,12 +11,12 @@ export function BoxAboutCompany({ params }: CarPageProps) {
   }
 
   return (
-    <div className="mt-10 mb-10 mr-10 pl-5">
+    <div className="mt-5 mb-5 pl-5">
       <div className="font-aboutCompany font-bold text-xl">
         <h1>Vantagens de alugar com nós</h1>
       </div>
 
-        <div className="w-[70%] mt-3 mb-3">
+        <div className="w-[50%] md:w-[70%] mt-3 mb-3">
             <hr className="text-gray-400" />
         </div>
         
@@ -24,7 +24,7 @@ export function BoxAboutCompany({ params }: CarPageProps) {
         <ul className="flex flex-col gap-4">
             <li className="flex items-center gap-2">
               <Image 
-                src='/icons/chat.svg'
+                src='/icons/chatBlack.svg'
                 alt=""
                 width={24}
                 height={24}

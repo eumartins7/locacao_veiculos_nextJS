@@ -7,7 +7,21 @@ export function BotaoVendedor({ modelo, marca }: { modelo: string, marca: string
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-aboutCompany text-white text-bold text-lg bg-amber-700 hover:bg-amber-600 p-2 pl-20 pr-20 rounded-xl cursor-pointer"
+                className="
+                font-aboutCompany
+                text-white text-bold 
+                text-lg
+                bg-amber-700 
+                hover:bg-amber-600 
+                px-6 py-3
+                md:pl-5 md:pr-5
+                md:px-20 
+                md:text-xl
+                lg:pl-20 lg:pr-20
+                lg:px-24
+                rounded-xl cursor-pointer
+                inline-block
+                "
             >
                 Fale com um vendedor
             </a>

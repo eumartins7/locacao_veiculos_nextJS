@@ -20,14 +20,6 @@ export function HeaderCars() {
             />
           </Link>
         </div>
-
-        <nav>
-          <ul className="flex gap-3">
-            <li>
-              <Link href="/">Início</Link>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
   );

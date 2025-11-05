@@ -12,7 +12,7 @@ export function BoxImgLeft({ params }: CarPageProps) {
 
   return (
       <div className="mt-10">
-          <div className="flex justify-center flex-1 bg-white rounded-2xl mt-10 mr-10">
+          <div className="flex justify-center flex-1 rounded-2xl md:mt-10 md:mr-10">
             <div className="relative aspect-[16/9] w-full">
               <Image
                 src={carro.image}
