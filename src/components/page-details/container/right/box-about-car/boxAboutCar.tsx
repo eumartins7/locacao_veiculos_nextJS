@@ -11,19 +11,20 @@ export function BoxAboutCar({ params }: CarPageProps) {
   }
 
   return (
-    <div className="">
-      <div className="">
-        <div className="flex flex-col">
+        <div className="font-aboutCompany font-bold flex flex-col">
             <div className="bg-white rounded-2xl">
                 <div 
                     className=" mt-10 mb-10 mr-10 pl-5 ">
-                    <div className="text-3xl">
-                        <h1>
-                            {carro.marca} <b>{carro.modelo}</b>
-                        </h1>
+                    <div>
+                        <div className="font-normal text-3xl">
+                            <h1>
+                                {carro.marca} <b>{carro.modelo}</b>
+                            </h1>                        
+                        </div>
 
-                        <div>
-                            <p>carro bom</p>
+
+                        <div className="text-stone-700 text-base">
+                            <p>{carro.subInfo}</p>
                         </div>
                     </div>
                 
@@ -32,21 +33,29 @@ export function BoxAboutCar({ params }: CarPageProps) {
                     </div>
                 
                     <div>
-                        <p>
-                            A partir de: <br /> {carro.price}
-                        </p>
-                        <p>
-                            no plano de 1 mês
-                        </p>
+                        <div className="text-stone-600">
+                            <p>
+                                A partir de:
+                            </p>                        
+                        </div>
+
+                        <div className="text-xl">
+                            {carro.price}
+                        </div>
+
+                        <div className="text-stone-600">
+                            <p>
+                                no plano de 1 mês
+                            </p>                    
+                        </div>
+
                     </div>
                 
                     <div className="flex flex-1 justify-center mt-5">
-                        <BotaoVendedor />
+                        <BotaoVendedor modelo={params.id} marca={carro.marca} />
                     </div>
                 </div>
             </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 }
