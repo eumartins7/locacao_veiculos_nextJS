@@ -17,7 +17,7 @@ export function Carousel() {
 
   return (
     <section className="flex justify-center pt-10">
-      <div className="relative w-7xl h-[500px] overflow-hidden rounded-2xl">
+      <div className="relative w-[80%] h-[150px] lg:w-7xl lg:h-[500px] overflow-hidden rounded-2xl">
         {slides.map((slide, index) => (
           <Image
             key={index}
