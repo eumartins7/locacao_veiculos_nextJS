@@ -9,68 +9,53 @@ export function BoxSpecs({ params }: CarPageProps) {
   
 
   return (
-    <div className=" mt-10 mb-10 mr-10 pl-5">
+    <div className=" font-aboutCompany mt-10 mb-10 mr-10 pl-5">
       <div className="flex-1 bg-white rounded-xl p-6 shadow-md mt-6">
-        <div className="font-aboutCompany font-bold text-xl mb-5">
+        <div className=" font-bold text-xl mb-5">
           <h1>Detalhes</h1>
         </div>
-        <ul className="flex justify-around flex-wrap">
-          <li className="flex items-center gap-2">
+
+        <div className="flex justify-around text-sm">
+          <div className="flex gap-2">
             <Image 
-              src='/infos-car/gas-station.png'
-              alt={String(carro?.fuel)}
-              width={24}
-              height={24}
+              src="/infos-car/car-engine.svg"
+              alt='Icone de motor'
+              width={30}
+              height={30}
             />
-            <p className="font-aboutCompany font-medium text-stone-800">
-              Combustível 
-              <br />
-              {carro?.fuel}
-            </p>
-          </li>
+            <div>
+              <p>Potência</p>
+              <p>{carro?.power}</p>            
+            </div>
+          </div>
 
-          <li className="flex items-center gap-2">
+          <div className="flex justify-center gap-2">
             <Image 
-              src='/infos-car/motor-de-carro.png'
-              alt={String(carro?.power)}
-              width={24}
-              height={24}
-            />            
-            <p className="font-aboutCompany font-medium text-stone-800">
-              Potência 
-              <br />
-              {carro?.power}
-            </p>
-          </li>
+              src="/infos-car/transmissao.svg"
+              alt='Icone de marcha'
+              width={30}
+              height={30}
+            />
+            <div>
+              <p>Transmissão</p>
+              <p>{carro?.transmission}</p>            
+            </div>
+          </div>
 
-          <li className="flex items-center gap-2">
+          <div className="flex justify-center gap-2">
             <Image 
-              src='/infos-car/gearshift.png'
-              alt={String(carro?.transmission)}
-              width={24}
-              height={24}
-            />              
-            <p className="font-aboutCompany font-medium text-stone-800">
-              Câmbio 
-              <br />
-              {carro?.transmission}
-            </p>
-          </li>
+              src="/infos-car/gas-station.svg"
+              alt='Icone de combustível'
+              width={30}
+              height={30}
+            />
+            <div>
+              <p>Combustível</p>
+              <p>{carro?.fuel}</p>            
+            </div>
+          </div>
 
-          <li className="flex items-center gap-2">
-            <Image 
-              src='/infos-car/door.png'
-              alt={String(carro?.doors)}
-              width={24}
-              height={24}
-            />              
-            <p className="font-aboutCompany font-medium text-stone-800">
-              Portas 
-              <br />
-              {carro?.doors}
-            </p>
-          </li>
-        </ul>
+        </div>
       </div>
     </div>
   );
