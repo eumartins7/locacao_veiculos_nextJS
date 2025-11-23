@@ -19,7 +19,7 @@ export function WhyService() {
 
                         <CardAbout 
                             image="/icons/car.svg"
-                            title="Quem precisa de mobilidade"
+                            title="Quem quer mobilidade"
                             description="Atendemos motoristas particulares ou profissionais autônomos."
                         />
 
