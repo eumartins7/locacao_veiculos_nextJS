@@ -37,6 +37,11 @@ html {
 
 }
 
+.swiper-button-next, .swiper-button-prev {
+  color: white;
+  
+}
+
 @layer base{
   :root {
   --font-family-sans: "Patua One", sans-serif;

@@ -15,19 +15,18 @@ export function CardAbout({title, description, image}: CardAboutProps){
                 alt=''
                 width={30}
                 height={30}
+                className="md:w-[40]"
                 />
             </div>
             <div className="flex flex-col">
-               <h1 className="font-h1serv text-lg lg:text-3xl">
+               <h1 className="font-aboutCompany font-bold text-lg lg:text-3xl">
                     {title}
                 </h1> 
 
                 <p className="font-pserv text-sm lg:text-base text-stone-600">
                     {description}
                 </p>
-            </div>
-            
-            
+            </div>  
         </div>
     )
 }
