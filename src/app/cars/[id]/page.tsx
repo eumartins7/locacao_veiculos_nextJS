@@ -1,6 +1,6 @@
 import { HeaderCars } from "@/components/pagina-carros/header-cars/headerCar";
 import { CarPage } from "@/components/page-details/details-window/detailsWindow";
-import { FooterCars } from "@/components/pagina-carros/footer-cars/footerCars";
+import { Footer } from "@/components/layout/footer/footer";
 
 export default async function CarsDetails({
   params,
@@ -13,7 +13,7 @@ export default async function CarsDetails({
     <>
       <HeaderCars />
       <CarPage params={{ id }} />
-      <FooterCars />
+      <Footer />
     </>
   );
 }
