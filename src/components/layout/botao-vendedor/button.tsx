@@ -11,8 +11,8 @@ export function BotaoVendedor({ modelo, marca }: { modelo: string, marca: string
                 font-aboutCompany
                 text-white text-bold 
                 text-lg
-                bg-amber-700 
-                hover:bg-amber-600 
+                bg-[#FF4100] 
+                hover:bg-[#FF6000] 
                 px-6 py-3
                 md:pl-5 md:pr-5
                 md:px-20 
