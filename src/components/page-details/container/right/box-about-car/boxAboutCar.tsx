@@ -42,7 +42,7 @@ export function BoxAboutCar({ params }: CarPageProps) {
                             {carro.price}
                         </div>
 
-                        <div className="text-stone-600 md:text-xl">
+                        <div className="text-stone-600 md:text-lg">
                             <p>
                                 no plano de 1 mês
                             </p>                    
