@@ -37,8 +37,6 @@ export function WhyService() {
                     </div>
                 </div>
             </div>
-            
-            
         </section>
     )
 }
