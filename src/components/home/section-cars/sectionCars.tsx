@@ -6,7 +6,7 @@ import Image from "next/image";
 export function CarsSection() {
     return (
         <section id="veiculos" className="bg-gray-200 w-full">
-            <div className="mt-10 pt-20 pb-20 lg:ml-20 lg:mr-20">
+            <div className="md:mt-10 pt-20 pb-20 lg:ml-20 lg:mr-20">
                 
                 <div className="flex justify-center whitespace-nowrap font-vehicle text-2xl md:text-5xl">
                     <h1>Confira alguns veículos!</h1>
