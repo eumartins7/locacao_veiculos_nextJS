@@ -1,6 +1,5 @@
 'use client'
 import { Swiper, SwiperSlide } from "swiper/react"
-import Image from "next/image"
 
 import "swiper/css"
 import "swiper/css/navigation"
@@ -10,19 +9,31 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export function Carousel() {
   const slides = [
-    {id:'1', image:'/carousel/banner1.png', alt:'banner1'},
-    {id:'2', image:'/carousel/banner2test.png', alt:'banner2'},
+    {
+      id: '1',
+      geral: '/carousel/banner-geral.png',
+      desktop1280: '/carousel/banner-1280.png',
+      alt: 'banner 1'
+    },
+    {
+      id: '2',
+      geral: '/carousel/banner-geral-2.png',
+      desktop1280: '/carousel/banner-1280-2.png',
+      alt: 'banner 2'     
+    }
   ]
 
   return (
     <section className="flex justify-center pt-10">
-      <div className="relative w-[80%] h-[150px] lg:h-[600px] overflow-hidden rounded-2xl">
+
+      {/*  */}
+      <div className="relative w-[90%] aspect-[1920/600] md:w-[80%] xl:w-[80%] overflow-hidden rounded-2xl">
         <Swiper
         modules={[Autoplay, Navigation, Pagination]}
         slidesPerView={1}
         loop
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false
         }}
         navigation
@@ -34,13 +45,17 @@ export function Carousel() {
           key={item.id}
           className="relative"
           >
-            <Image 
-            src={item.image}
-            alt={item.alt}
-            fill
-            className="object-cover"
-            sizes="100vw"
-            />
+            <picture>
+              <source 
+                media="(min-width: 1280px) and (max-height: 800px)"
+                srcSet={item.desktop1280}
+              />
+
+              <img
+                src={item.geral}
+                alt={item.alt}
+              />
+            </picture>
           </SwiperSlide>
         ))}
         </Swiper>
