@@ -17,14 +17,6 @@ export function Header() {
                     priority
                     />  
                 </div>
-
-                <nav className="hidden md:visible md:flex md:text-center md:items-center">
-                    <ul className="md:flex md:text-stone-900 md:gap-3 md:font-aboutCompany md:font-bold">
-                        <li className="lg:hover:underline"><a href="#sobre">Sobre Nós</a></li>
-                        <li className="lg:hover:underline"><a href="#veiculos">Veículos</a></li>
-                        
-                    </ul>
-                </nav>
             </div>
         </header>
     )
