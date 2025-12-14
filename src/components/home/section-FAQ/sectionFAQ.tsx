@@ -1,4 +1,4 @@
-import { Accordion } from "./accordion/accordion";
+import { FaqAccordion } from "./accordion/accordion";
 import { FAQ } from "./FAQ-data/dataFAQ";
 
 export function SectionFaq() {
@@ -9,10 +9,10 @@ export function SectionFaq() {
                 <h1>Perguntas Frequentes (FAQ)</h1>
             </div>
 
-            <div>
-                {FAQ.map((item, index) => (
-                    <Accordion 
-                        key={index}
+            <div className="pb-10 lg:p-0">
+                {FAQ.map((item) => (
+                    <FaqAccordion 
+                        key={item.id}
                         pergunta={item.pergunta}
                         resposta={item.resposta}
                     />
