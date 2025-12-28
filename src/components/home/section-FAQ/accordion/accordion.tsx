@@ -20,7 +20,7 @@ export function FaqAccordion({pergunta, resposta}:FaqProps) {
         <div className="px-5 md:px-0 p-5">
             <Accordion type="single" collapsible>
                 <AccordionItem value="item">
-                    <AccordionTrigger>
+                    <AccordionTrigger className="hover:cursor-pointer">
                         {pergunta}
                     </AccordionTrigger>
                     <AccordionContent>
