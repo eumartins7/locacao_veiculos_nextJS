@@ -15,7 +15,7 @@ export function CompanyBenefits() {
       <div className="font-aboutCompany font-medium text-lg text-stone-800">
         <div className="flex flex-col gap-4">
           {EmpresaVantagem.map((item) => (
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2" key={item.id}>
               <Image src={item.img} alt={item.alt} width={24} height={24} />
               <p>{item.description}</p>
             </div>
