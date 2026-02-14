@@ -1,24 +1,23 @@
-import { Header } from "@/components/layout/header/header";
-import { Carousel } from "@/components/home/section-carousel/sectionCarousel";
-import { WhyService } from "@/components/home/infos-services/infosServices";
-import { CarsSection } from "@/components/home/section-cars/sectionCars";
-import { SectionReview } from "@/components/home/section-reviews/sectionReviews";
-import { Footer } from "@/components/layout/footer/footer";
-import { ChatWidget } from "@/components/layout/chat-widget/chatWidget";
-import { SectionFaq } from "@/components/home/section-FAQ/sectionFAQ";
-
+import { Header } from "@/feature/layout/header/header";
+import { Carousel } from "@/feature/hero/hero";
+import { Service } from "@/feature/serviço/infosServices";
+import { CarsSection } from "@/feature/cars/sectionCars";
+import { SectionReview } from "@/feature/review/sectionReviews";
+import { Footer } from "@/feature/layout/footer/footer";
+import { ChatWidget } from "@/feature/layout/chat-widget/chatWidget";
+import { SectionFaq } from "@/feature/faq/sectionFAQ";
 
 export default function Home() {
   return (
-   <>
+    <>
       <Header />
       <Carousel />
       <ChatWidget />
-      <WhyService  />
+      <Service />
       <CarsSection />
       <SectionReview />
       <SectionFaq />
       <Footer />
-   </>
+    </>
   );
 }
