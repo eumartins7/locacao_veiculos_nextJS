@@ -12,7 +12,7 @@ export function HeaderCars() {
             </span>
 
             <Image
-              src="/logo/logoICON.png"
+              src="/logo/logo.png"
               alt="Logo Martins Locações"
               width={120}
               height={120}
