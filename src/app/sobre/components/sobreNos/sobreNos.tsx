@@ -1,6 +1,6 @@
 export function SobreNos() {
   return (
-    <section className="bg-[#FF4100] w-full -mt-px pb-10">
+    <section className="bg-[#FF4100] w-full -mt-px pb-10 pt-20">
       {/* O -mt-[1px] é um truque para colar se houver linha fantasma */}
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center border-t border-white/30 pt-8">

@@ -18,7 +18,7 @@ export function Footer() {
           <div className="md:justify-self-center pt-4 md:pt-0">
             <nav>
               <span className="text-lg font-bold">Navegação</span>
-              <ul className="pt-2 flex flex-col gap-1">
+              <ul className="pt-2 flex flex-col gap-1 font-medium">
                 <li>
                   <Link href="/#home" className="hover:underline transition">
                     Home
@@ -70,10 +70,19 @@ export function Footer() {
             <div className=" h-px bg-linear-to-r from-transparent via-white to-transparent"></div>
           </div>
 
-          <div className="flex justify-center pt-5 pb-10">
+          <div className="flex justify-center pt-5 pb-5">
             <span className="text-xs">
               © 2025 Martins Locações — Todos os direitos reservados
             </span>
+          </div>
+
+          <div className="text-xs lg:w-full lg:flex lg:items-center lg:justify-center lg:text-center lg:pb-5">
+            <p>
+              Desenvolvido por{" "}
+              <a href="#" className="hover:underline font-bold text-black">
+                gbmartins.com.br
+              </a>
+            </p>
           </div>
         </div>
       </div>

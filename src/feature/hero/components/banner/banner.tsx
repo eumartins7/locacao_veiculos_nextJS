@@ -18,13 +18,17 @@ export function Banner() {
     {
       id: "1",
       geral: "/carousel/banner-geral.png",
-      desktop1280: "/carousel/banner-1280.png",
+
+      tablet: "/carousel/bannerTablet.png",
+      celular: "/carousel/bannerMob.png",
       alt: "banner 1",
     },
     {
       id: "2",
       geral: "/carousel/banner-geral-2.png",
-      desktop1280: "/carousel/banner-1280-2.png",
+
+      tablet: "/carousel/bannerTablet2.png",
+      celular: "/carousel/bannerMob2.png",
       alt: "banner 2",
     },
   ];
@@ -42,11 +46,13 @@ export function Banner() {
         slideShadows: false,
       }}
       loop
-      autoplay={{ delay: 4000, disableOnInteraction: false }}
       speed={1200}
       breakpoints={{
         0: {
-          navigation: false, //mobile
+          navigation: false,
+        },
+        1024: {
+          navigation: true, // Reativa as setas apenas no desktop
         },
       }}
       pagination={{ clickable: true }}
@@ -56,15 +62,17 @@ export function Banner() {
       {slides.map((item) => (
         <SwiperSlide key={item.id} className="h-full">
           <picture className="block h-full w-full">
-            <source
-              media="(min-width: 1280px) and (max-height: 800px)"
-              srcSet={item.desktop1280}
-            />
+            {/* Mobile */}
+            <source media="(max-width: 767px)" srcSet={item.celular} />
 
+            {/* Tablet (768px até 1023px) */}
+            <source media="(max-width: 1023px)" srcSet={item.tablet} />
+
+            {/* Fallback para Telas Gigantes */}
             <img
               src={item.geral}
               alt={item.alt}
-              className="h-full w-full obejct-cover"
+              className="h-full w-full object-cover"
             />
           </picture>
         </SwiperSlide>
