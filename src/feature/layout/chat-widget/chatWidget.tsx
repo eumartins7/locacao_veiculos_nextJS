@@ -5,7 +5,7 @@ export function ChatWidget() {
         <div className=" whitespace-nowrap fixed shadow-2xl bottom-3 right-2 z-999 transition delay-150 duration-300 ease-in-out bg-stone-700 hover:bg-black hover:-translate-y-2 hover:-translate-x-1 text-white rounded-lg">
             <div className="flex text-center text-sm items-center gap-2 p-2">
                 <a 
-                    href="https://wa.me/5512988372717"
+                    href="https://wa.me/5512982516250"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex gap-2"

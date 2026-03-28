@@ -5,7 +5,7 @@ export function BotaoVendedor({
   modelo: string;
   marca: string;
 }) {
-  const href = `https://wa.me/5512988372717?text=${encodeURIComponent(`Olá, gostaria de saber mais sobre o ${marca} ${modelo}`)}`;
+  const href = `https://wa.me/5512982516250?text=${encodeURIComponent(`Olá, gostaria de saber mais sobre o ${marca} ${modelo}`)}`;
 
   return (
     <div className="w-full py-5">
