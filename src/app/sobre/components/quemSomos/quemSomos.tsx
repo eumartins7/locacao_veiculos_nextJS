@@ -1,12 +1,21 @@
+import { Breadcrumbs } from "@/feature/layout/bread-crumbs/Breadcrumbs";
+
 export function QuemSomos() {
   return (
-    <section className="pt-10 px-5">
+    <section className="py-10 px-5 bg-white">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center ">
-          <h2 className="text-3xl md:text-4xl font-bold">Quem Somos</h2>
+        {/* 2. Breadcrumb posicionado antes de todo o conteúdo */}
+        <div className="mb-10">
+          <Breadcrumbs />
+        </div>
+
+        <div className="text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-900">
+            Quem Somos
+          </h2>
 
           <div className="text-justify text-lg text-gray-700 leading-relaxed">
-            <p className="py-4">
+            <p className="pb-6">
               A Martins Locações é uma empresa de aluguel de veículos construída
               sobre confiança, transparência e um profundo entendimento das
               necessidades de nossos clientes. Sabemos que a mobilidade é
