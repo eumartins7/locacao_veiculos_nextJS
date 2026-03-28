@@ -76,7 +76,7 @@ export function Footer() {
             </span>
           </div>
 
-          <div className="text-xs lg:w-full lg:flex lg:items-center lg:justify-center lg:text-center lg:pb-5">
+          <div className="text-xs w-full flex items-center justify-center text-center pb-5">
             <p>
               Desenvolvido por{" "}
               <a href="#" className="hover:underline font-bold text-black">
