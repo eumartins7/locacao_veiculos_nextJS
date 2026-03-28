@@ -3,7 +3,7 @@ import { DataCard } from "./data/data";
 
 export function Problema() {
   return (
-    <section className="mt-10 px-5 bg-zinc-100 py-16">
+    <section className=" px-5 bg-zinc-100 py-16">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col gap-10">
           <div className="text-center">
