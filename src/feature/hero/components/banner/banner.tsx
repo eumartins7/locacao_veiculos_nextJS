@@ -36,6 +36,7 @@ export function Banner() {
   return (
     <Swiper
       modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+      autoplay={{ delay: 4000, disableOnInteraction: false }}
       slidesPerView={1}
       effect="coverflow"
       coverflowEffect={{
