@@ -49,7 +49,7 @@ export function Contato() {
                   E-mail
                 </p>
                 <p className="text-base font-bold text-gray-800">
-                  contato@martins.com
+                  gabrielmartins8802@gmail.com
                 </p>
               </div>
             </div>
