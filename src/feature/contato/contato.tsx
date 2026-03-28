@@ -40,7 +40,7 @@ export function Contato() {
 
           {/* Grid de Informações Secundárias */}
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-12">
-            <div className="flex items-center gap-5 bg-white p-6 rounded-2xl shadow-sm border border-gray-50">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-5 bg-white p-6 rounded-2xl shadow-sm border border-gray-50">
               <div className="bg-orange-100 p-4 rounded-xl text-[#FF4100]">
                 <FaEnvelope size={24} />
               </div>
@@ -48,7 +48,7 @@ export function Contato() {
                 <p className="text-xs text-gray-400 uppercase font-black tracking-widest">
                   E-mail
                 </p>
-                <p className="text-base font-bold text-gray-800">
+                <p className="text-base font-bold text-gray-800 break-all">
                   gabrielmartins8802@gmail.com
                 </p>
               </div>
