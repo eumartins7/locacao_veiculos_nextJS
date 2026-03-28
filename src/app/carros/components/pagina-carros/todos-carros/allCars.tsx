@@ -3,10 +3,10 @@ import { CardPageTwo } from "./pageCar-card/card";
 
 export function AllCars() {
   return (
-    <section id="topo" className="bg-gray-100 py-16 md:py-24">
+    <section id="topo" className="bg-gray-100 pb-20 pt-40 ">
       <div className="max-w-7xl mx-auto px-6">
         {/* Cabeçalho da Seção */}
-        <div className="text-center mb-12 md:mb-16">
+        <div className="text-center md:mb-16">
           <h1 className="font-vehicle text-3xl md:text-5xl font-bold text-gray-900 tracking-tight">
             Confira nossos veículos!
           </h1>
