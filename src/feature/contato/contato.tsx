@@ -29,7 +29,7 @@ export function Contato() {
             </p>
 
             <a
-              href="https://wa.me/5512999999999" // Link direto caso ele não queira preencher o form
+              href="https://wa.me/5512982516250" // Link direto caso ele não queira preencher o form
               target="_blank"
               className="flex items-center justify-center gap-3 bg-[#25D366] text-white font-bold py-4 rounded-xl hover:bg-[#20ba5a] transition-all transform hover:scale-105 shadow-xl shadow-green-200"
             >
