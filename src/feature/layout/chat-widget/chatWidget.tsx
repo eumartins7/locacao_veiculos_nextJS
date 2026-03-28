@@ -1,24 +1,33 @@
-import Image from "next/image"
+import { FaWhatsapp } from "react-icons/fa"; // Ou use um SVG se preferir
 
 export function ChatWidget() {
-    return (
-        <div className=" whitespace-nowrap fixed shadow-2xl bottom-3 right-2 z-999 transition delay-150 duration-300 ease-in-out bg-stone-700 hover:bg-black hover:-translate-y-2 hover:-translate-x-1 text-white rounded-lg">
-            <div className="flex text-center text-sm items-center gap-2 p-2">
-                <a 
-                    href="https://wa.me/5512982516250"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex gap-2"
-                    >
-                    <Image 
-                        src='/icons/chat.svg'
-                        alt="icone de conversa"
-                        width={16}
-                        height={16}
-                    />
-                    <span>Converse com um vendedor</span>
-                </a>
-            </div>
-        </div>
-    )
+  return (
+    <a
+      href="https://wa.me/5512982516250"
+      target="_blank"
+      rel="noopener noreferrer"
+      // bottom-24 ou bottom-28 garante que ele fique acima da última div do footer
+      // z-50 para ficar acima de tudo, mas abaixo de modais se houver
+      className="fixed bottom-24 right-6 z-50 flex items-center justify-center 
+                 w-14 h-14 bg-[#25D366] text-white rounded-full shadow-2xl 
+                 hover:bg-[#20ba5a] hover:scale-110 transition-all duration-300
+                 group"
+      aria-label="Chamar no WhatsApp"
+    >
+      {/* Ícone principal */}
+      <FaWhatsapp size={32} />
+
+      {/* Tooltip opcional que aparece no hover (apenas PC) */}
+      <span
+        className="absolute right-16 bg-white text-gray-800 text-xs font-bold 
+                       px-3 py-2 rounded-lg shadow-md opacity-0 group-hover:opacity-100 
+                       transition-opacity pointer-events-none hidden md:block whitespace-nowrap"
+      >
+        Falar com consultor
+      </span>
+
+      {/* Ping de animação para chamar atenção (opcional) */}
+      <span className="absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-20 animate-ping"></span>
+    </a>
+  );
 }
