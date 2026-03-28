@@ -75,7 +75,7 @@ export function Header() {
               href="#sobre"
               className="hover:text-[#FF4100] transition-colors"
             >
-              Sobre
+              Serviços
             </Link>
             <Link
               href="#contato"
